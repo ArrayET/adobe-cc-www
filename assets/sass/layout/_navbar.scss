@@ -46,7 +46,7 @@ nav{
                 background-color: #AAA;
             }
         } // account-infp
-    } //top-nav
+    } // #top-nav
 
     #bottom-nav{
         @include basic-flex();
@@ -71,6 +71,7 @@ nav{
                 background-color: #111;
                 color: #FFF;
             }
-        }
-    }
+        } // ul
+    } // #bottom-nav
+
 } //nav
