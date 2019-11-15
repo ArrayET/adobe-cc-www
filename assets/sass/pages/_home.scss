@@ -3,10 +3,18 @@
 #home-hero{
     @include basic-flex();
 
+    position: relative;
+    top: -$bottom-nav-height;
+    z-index: 5;
+
     height: auto;
     min-height: 70vh;
     width:  100vw;
     background-color: #333;
+
+    video{
+        
+    }
 
     #home-hero-content{
         @include basic-flex(flex-start, flex-start, column);

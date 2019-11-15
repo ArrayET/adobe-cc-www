@@ -157,9 +157,11 @@ nav #bottom-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+  z-index: 10;
   height: 80px;
   width: 100vw;
-  background-color: #CCC;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav #bottom-nav ul {
@@ -202,6 +204,14 @@ nav #bottom-nav ul li {
   color: #FFF;
 }
 
+nav #bottom-nav ul li:first-child::before {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  content: "";
+  margin-right: 20px;
+}
+
 #home-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +226,9 @@ nav #bottom-nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+  top: -80px;
+  z-index: 5;
   height: auto;
   min-height: 70vh;
   width: 100vw;
